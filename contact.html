@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylecontact.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="header1">
+				<a href="index.html"><h2><span>Shubham Gupta</span><font size ="3.5"><br>Electrical Engineer (Student)</font></h2></a> 
+			</div>
+			<div class="menu animated slideInDown" id="pages">
+				<a href="#" class="cancelbtn" onclick="closeslide()"> &times; </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a href="#" class="Mobile-Nav"  onclick="slide()"> <i class="fa fa-bars fa-2x"></i></a>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="column">
+					<div class="header2">
+						<h1>WHERE TO FIND ME?</h1><hr>
+					</div>
+					<div id="map"></div>
+					<h1> Share this Website</h1>
+					<div class="social__item">
+						<div class="addthis_inline_share_toolbox"></div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="header3">
+						<h1>CONTACT</h1><hr>
+					</div>
+					<form action="mailto:guptasr@mcmaster.ca" id="reset" onsubmit="return FormVal()">
+						<div class="text">
+							<div>
+								<input type="text" id="Name"  placeholder="Name (Required)">
+								<span id="Error"></span>
+							</div>
+							<div>
+								<input type="text" id="Email"  placeholder="E-mail (Required)">
+								<span id="Error2"></span>	
+							</div>
+							<div>
+								<input type="text" id="Subject" placeholder="Subject (Required)">
+								<span id="Error3"> </span>
+							</div>
+							<div>
+								<textarea id="Msg" placeholder="Message (Required)"></textarea>
+								<span id="Error4"> </span><br>
+							</div>
+							<div>
+								<input type="submit" id="Send" value="Send">
+							</div>	
+						</div>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  			integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  			crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  			integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  			crossorigin="">		
+  		</script>
+  		<script>
+  			var map = L.map('map').setView([43.2579, -79.9170], 8);
+
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			L.marker([43.6587, -79.3905]).addTo(map)
+    			.bindPopup('My Previous Co-Op Placement: OPG')
+    			.openPopup();
+			
+			L.marker([43.2579, -79.9170]).addTo(map)
+    			.bindPopup('Visit me at my University: McMaster University')
+    			.openPopup();
+  		</script>
+	</div>
+		<div class="lastVisit"> 
+			<script>DisplayVisits()</script>
+		</div>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c3b09c69489d67c"></script>
+</body>
+</html>

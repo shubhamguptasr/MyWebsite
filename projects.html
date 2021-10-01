@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styleproj.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/lastmod.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="header1">
+				<a href="index.html"><h2><span>Shubham Gupta</span><font size ="3.5"><br>Electrical Engineer (Student)</font></h2></a> 
+			</div>
+			<div class="menu animated slideInDown" id="pages">
+				<a href="#" class="cancelbtn" onclick="closeslide()"> &times; </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a href="#" class="Mobile-Nav" onclick="slide()"> <i class="fa fa-bars fa-2x"></i></a>
+		</header>
+		<div class="main">
+			<div class="header3"> 
+				<h1>LATEST PROJECTS</h1>
+				<hr>
+			</div>
+			<div class="clearfix">
+				<h1 id="flip"><span>Project 1: <font size ="1.0"><i>Click to Hide Details!</i></font></span></h1><hr>
+				<h3 id="div1">Half-wave Rectifier</h3><br>
+				<p id="div2">Successfully designed, simulated and build a functional rectifier using MOSFETs. Utilized OrCAD PSpice, MapleSim and Oscilloscope to test functionality.</p>
+				<img class="img1" src="Images/halfwave.png" alt="Halfwave Rectifier" id="slide">
+			</div> 
+			<div class="clearfix">
+				<h1 id="flip2"><span>Project 2: <font size="1.0"><i>Click to Hide Details!</i></font></span></h1><hr>
+				<h3 id="div3">Stock Portfolio Tracker</h3><br>
+				<p id="div4">Developed a VBA based application using open database connectivity (ODBC) to monito real-time stock & fund changes. Implemented live charts to track personal portfolio movements and provide true performance on the go.</p>
+				<img class="img2" src="Images/portfolio.png" alt="Stock portfolio" id="slide2">
+			</div>
+		</div>
+		<footer>
+				<div class="social-icon">
+					<a href="#"><i class="fa fa-phone fa-2x"></i> 647 739 1508</a>
+					<a href="#"><i class="fa fa-envelope fa-2x"></i> guptasr@mcmaster.ca</a>
+					<a href="https://www.linkedin.com/in/shubhamgupta9"><i class="fa fa-linkedin-square fa-2x"></i> linkedin.com/in/shubham</a>
+					<p class="lastModified"> <script> lastMod(); </script></p>
+				</div>
+		</footer>
+	</div>
+<script>
+		$(document).ready(function(){
+	  	$("#flip").click(function(){
+	    $("#div1").slideToggle("slow");
+	    $("#div2").slideToggle("slow");
+	  });
+	});
+		$(document).ready(function(){
+	  	$("#flip2").click(function(){
+	    $("#div3").slideToggle("slow");
+	    $("#div4").slideToggle("slow");
+	  });
+	});
+</script>
+</body>
+</html>

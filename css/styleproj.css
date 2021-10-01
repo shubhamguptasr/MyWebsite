@@ -1,0 +1,265 @@
+html{
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+body{
+	font:15px/1.5 'Montserat',sans-serif ;
+	margin:0;
+	padding:0;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	background-color:#EAE4E4;
+	padding-bottom:10%;
+	overflow-x:hidden;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+}
+#wrapper{
+	width:100%;
+	margin:auto;
+}
+.menu{
+	width: 100%;
+	margin:auto;
+	overflow:hidden;
+}
+header{
+	color:#ffffff;
+    left: 0;
+    top: 0;
+    width: 100%;
+	padding-bottom:2%;
+	min-height: 20%;
+}
+header a{
+	color:#000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+header nav{
+	float:right;
+	margin-top:10px;
+	margin-right:12%;
+}
+header .highlight, header .current a{
+	color:#ffffff;
+	font-weight:bold;
+}
+header a:hover{
+	color:#E83555;
+	font-weight: bold;
+}
+footer{
+	margin-top:0.5%;
+	color:#ffffff;
+	background-color: #E83555;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height:7%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0%;
+}
+footer a{
+	color:#000000;
+	text-transform: lowercase;
+    text-align: center;
+    vertical-align: middle;
+	font-size: 100%;
+	padding-left: 20%;
+}
+.social-icon a{
+	display:inline-block;
+	text-decoration: none;
+	text-align: vertical;
+	color:white;
+	padding-left:5%;
+	padding-right:5%;
+}
+.social-icon{
+	text-align: center;
+}
+.header1{
+	padding-left: 5%;
+	padding-top:3%;
+	margin:0;
+	font-weight:bold;
+	color:black;
+	font-size: 22px;
+    line-height: 30px;
+    height: 20px;
+	font-family:'Montserat',sans-serif;
+}
+.header3{
+	padding-left:0%;
+	padding-top:5%;
+	margin:0;
+	font-weight:medium;
+	color:black;
+	font-size: 15px;
+	font-family:'Montserat',sans-serif;
+}
+.main{
+	padding-left: 5%;
+	width: 80%;
+	overflow: hidden;
+}
+.main li{
+	list-style:none;
+}
+.clearfix {
+	padding:2%;
+	overflow:hidden;
+}
+.img1{
+	float:left;
+	max-width:90%;
+	padding: 0;
+	border:solid black;
+	max-height: 20%;
+}
+.img2{
+	float:left;
+	max-width:90%;
+	border:solid black;
+	padding: 0;
+	max-height: 20%;
+}
+.clearfix span{
+	padding:0;
+	float: center;
+	margin:0;
+}
+.clearfix h1{
+	text-align:left;
+	padding:0;
+	margin: 0;
+	overflow:auto;
+	display:inline-flex;
+}
+.clearfix h3{
+	text-align:left;
+	margin: 0;
+	overflow:auto;
+	display:inline-flex;
+}
+.clearfix p{
+	text-align:left;
+	margin-top: 1;
+	overflow:auto;
+	display:inline-flex;
+}
+.lastModified {
+	text-align: center;
+	overflow: hidden;
+	font-family:'Open Sans',sans-serif;
+}
+#div1,#div2,#div3,#div4, #flip,#flip2 {
+  padding: 2px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: lightgrey;
+  border-bottom: solid 6px #E83555;
+}
+
+#div1,#div,#div3,#div4, {
+  padding: 1px;
+  margin-top:0;
+  text-align: left;
+  display: none;
+}
+
+.Mobile-Nav{display: none;}
+.cancelbtn{display: none;}
+/*////Responsive*/
+@media only screen and (max-width: 600px) {
+    .header1{
+    	width:100%;
+    	padding:2%;
+    	font-size: 100%;
+    }
+    .header3{
+    	padding-top:10%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .header1{
+    	width:100%;
+    	padding:2%;
+    	font-size: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+	.menu .Mobile-Nav{
+	display: none;
+	}
+
+	.Mobile-Nav {
+	display:block;
+	color:black;
+	margin-left:85%;
+	margin-top:1.5%;
+	top:4%;
+	position:fixed;
+	font-size: 100%;
+	}
+
+	.menu {
+		position:fixed;
+		right: 0;
+		top:0;
+		height:100%;
+		width:0px;
+		padding-top:60px;
+  		overflow-x: hidden;
+  		background-color: black;
+  		opacity: 0.8;
+  		z-index: 999;
+  		transition: all 0.3s;
+	}
+
+	.menu a {
+		margin: 20px;
+		border: 2px;
+		text-align: center;
+		display: block;
+		padding: 5px;
+		color: white;
+	}
+	.menu li{
+		float:none;
+		display:block;
+		text-align: center;
+		padding:5px;
+		cursor: pointer;
+	}
+
+	.cancelbtn{
+		position:absolute;
+		top: 0;
+		left: 0;
+		border:none!important;
+		font-size: 50px;
+	}
+	.clearfix span{
+		padding:0;
+		font-size: 90%;
+		text-align: left;
+		margin:0;
+	}
+}

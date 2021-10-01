@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styleresume.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<script src="js/resume.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="header1">
+				<a href="index.html"><h2><span>Shubham Gupta</span><font size ="3.5"><br>Electrical Engineer (Student)</font></h2></a> 
+			</div>
+			<div class="menu animated slideInDown" id="pages">
+				<a href="#" class="cancelbtn" onclick="closeslide()"> &times; </a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<a href="#" class="Mobile-Nav" onclick="slide()"> <i class="fa fa-bars fa-2x"></i></a>
+		</header>
+		<div class="main">
+			<div class="header3">
+				<h1>RESUME</h1><hr>
+			</div>
+			<div class="main-left">
+				<ul>
+					<div class="title">
+						<h1>Professional Info</h1>
+						<p>
+						I have a strong passion for Data Analysis, Power distribution, IoT and renewable energy. I am a hard-working, self motivated individual and a dedicated professional with excellent work ethics. I have a strong foundation of Engineering and Project Management allowing me to handle multiple tasks at once with specific attention to detail. I am always looking for a challenge that will help me become a better version of myself.
+						</p>
+					</div>
+				</ul><hr>
+				<ul>
+					<div class="title2">
+						<h1>Work Experience</h1>
+						<h2>Asset & Transmission Management Intern (05/2017 - 08/2018)</h2>
+							I worked as an intern at Ontario Power Generation under Asset & Transmission Management. I supported the on-going Market Operations within OPG's Commercial Contracts and Power Marketing Department. The team serves as the main point of contact for all operations at plant groups across Ontario and ensures that their is a high level of availability of OPG's assets (Nuclear, Hydroelectric, Thermal etc) in order to meet Ontario's electricity and market demand. My major contribution to the group has been in the optimal outage planning and scheduling of 35 hydroelectric, 2 nuclear and 3 thermal stations. All assets at OPG must be kept in reliable condition, thus require outages to perform annual maintenance, multi-annual major overhauls and refurbishment. I have created models and automated an excel based application which considers effects of electricity competition, regulation, environmental requirements and helps minimizes revenue losses to OPG due to equipment downtime.
+						</p>
+						<h2>Flight Sergeant (05/2014 - 08/2014)</h2>
+						<p>
+							The Air Cadet League of Canada, Ontario Provincial Committee is a civilian (non-military), community based, and volunteer led organization, which in collaboration with the Department of National Defence and other partners, is dedicated to supporting the objectives of the Royal Canadian Air Cadet program, and to developing in youth the attributes of good citizenship and leadership; promoting physical fitness; and stimulating the interest of youth in the aviation and aerospace industry, including the air element of the Canadian Forces. 
+						</p>
+					</div>
+				</ul><hr>	
+				<ul>
+					<li> <div class="title3"></div>
+						<h1>Education</h1>
+						<h2>McMaster Univerisity Electrical Engineering (Coop) </h2>
+						<p>
+							Electrical Engineering Co-op is a prestigious 5-year program that integrates the full course load of an undergraduate engineering education with a minimum of 12 months of professional experience. Throughout their studies, students develop designs of devices and systems that employ the flow of electrons to achieve useful purposes. The program focuses heavily on the physical design of electronics, electromagnetism and communication systems. As well as, Power systems, sustainable energy, and computer hardware/software integration. So far, I have completed 16 months of co-op experience in industry and academia.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="main-right">
+				<div class="skill">
+					<a href="#"><i class="fa fa-pencil fa-2x"></i></a>
+					<h2>Skills</h2><hr>
+					<ul>
+						<li>SCADA</li>
+						<li>ROMS</li>
+						<li>Microsoft Office</li>
+						<li>Validation Testing</li>
+						<li>Team Player</li>
+						<li>Process Automation</li>
+					</ul>
+				</div>
+				<div class="language">
+					<a href="#"><i class="fa fa-commenting fa-2x"></i></a>
+					<h2>Languages</h2>
+					<hr>
+					<ul>
+						<li>Java</li>
+						<li>C/C++</li>
+						<li>Python</li>
+						<li>MATLAB</li>
+						<li>VBA</li>
+					</ul>
+				</div>
+				<a href="#" class="scrollup"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></a>
+			</div>
+			<script>
+    			$(document).ready(function(){
+        			
+        		$(window).scroll(function(){
+            		if ($(this).scrollTop() > 100) {
+                		$('.scrollup').fadeIn();
+            		} else {
+                		$('.scrollup').fadeOut();
+           			 }
+        		});
+        		$('.scrollup').click(function(){
+            		$("html, body").animate({ scrollTop: 0 }, "800");
+            		return false;
+        		});
+    		});
+			</script>
+		</div>
+		<footer>
+				<div class="social-icon"><a href="#"><i class="fa fa-phone fa-2x"></i> 647 739 1508</a>
+					<a href="#"><i class="fa fa-envelope fa-2x"></i> guptasr@mcmaster.ca</a>
+					<a href="https://www.linkedin.com/in/shubhamgupta9"><i class="fa fa-linkedin-square fa-2x"></i> linkedin.com/in/shubham</a>
+					<p class="lastModified"> <script> lastMod(); </script></p>
+				</div>
+		</footer>
+	</div>
+</body>
+</html>
