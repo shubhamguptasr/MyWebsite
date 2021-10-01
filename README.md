@@ -1,2 +1,2 @@
 # MyWebsite
-An attempt to learn HTML. CSS, JavaScript 
+An attempt to learn HTML. CSS, JavaScript to make my own website
